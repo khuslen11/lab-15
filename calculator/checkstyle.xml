@@ -8,6 +8,17 @@
 
     <module name="TreeWalker">
 
+        <!-- Индентац 2 space -->
+        <module name="Indentation">
+            <property name="basicOffset" value="2"/>
+            <property name="tabWidth" value="2"/>
+        </module>
+
+        <!-- MethodLength - Хязгааргүй -->
+        <module name="MethodLength">
+            <property name="max" value="150"/>
+        </module>
+
         <!-- Ангийн нэр том үсгээр эхлэх ёстой -->
         <module name="TypeName"/>
 
@@ -22,26 +33,31 @@
             <property name="option" value="text"/>
         </module>
 
-        <!-- Ашиглагдаагүй хувьсагч байж болохгүй -->
+        <!-- Ашиглагдаагүй импорт -->
         <module name="UnusedImports"/>
 
-        <!-- Нэг мөрөнд 1 л statement зөвшөөрнө -->
+        <!-- Нэг мөрөнд нэг statement зөвшөөрнө -->
         <module name="OneStatementPerLine"/>
 
         <!-- If, while, for нь үргэлж фигур хаалттай байх -->
         <module name="NeedBraces"/>
 
-        <!-- Импортын дараалал -->
+        <!-- Импортын дараалал Google стандарт -->
         <module name="CustomImportOrder">
             <property name="sortImportsInGroupAlphabetically" value="true"/>
             <property name="separateLineBetweenGroups" value="true"/>
             <property name="customImportOrderRules" value="STATIC###STANDARD_JAVA_PACKAGE###THIRD_PARTY_PACKAGE###SAME_PACKAGE"/>
         </module>
 
-        <!-- Мөрийн урт 100 тэмдэгтээс хэтрэхгүй байх -->
+        <!-- Мөрийн урт 100 тэмдэгтээс хэтрэхгүй -->
         <module name="LineLength">
             <property name="max" value="100"/>
         </module>
+
+        <!-- Операторуудын өмнө болон хойно зай авах -->
+        <module name="WhitespaceAround"/>
+        <module name="WhitespaceAfter"/>
+        <module name="NoWhitespaceBefore"/>
 
         <!-- Return, throw дараа нь хоосон мөр оруулах -->
         <module name="EmptyLineSeparator">
