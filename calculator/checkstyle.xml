@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+    "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+    "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+
+    <!-- Кодын нийтлэг тохиргоо -->
+    <module name="TreeWalker">
+
+        <!-- Ангийн нэр том үсгээр эхлэх ёстой -->
+        <module name="TypeName"/>
+
+        <!-- Аргумент, хувьсагч camelCase байх -->
+        <module name="LocalVariableName"/>
+        <module name="MethodName"/>
+        <module name="ParameterName"/>
+        <module name="MemberName"/>
+
+        <!-- Хоосон блокыг зөвшөөрөхгүй -->
+        <module name="EmptyBlock">
+            <property name="option" value="text"/>
+        </module>
+
+        <!-- Ашиглагдаагүй хувьсагч байж болохгүй -->
+        <module name="UnusedImports"/>
+
+        <!-- Хэтэрхий урт мөр байж болохгүй (100 тэмдэгт) -->
+        <module name="LineLength">
+            <property name="max" value="100"/>
+        </module>
+
+        <!-- Нэг мөрөнд 1 л statement зөвшөөрнө -->
+        <module name="OneStatementPerLine"/>
+
+        <!-- If, while, for нь үргэлж фигур хаалттай байх -->
+        <module name="NeedBraces"/>
+
+        <!-- Кодын формат -->
+        <module name="WhitespaceAround"/>
+        <module name="WhitespaceAfter"/>
+        <module name="NoWhitespaceBefore"/>
+
+        <!-- import жагсаалт зөв дарааллаар -->
+        <module name="CustomImportOrder">
+            <property name="sortImportsInGroupAlphabetically" value="true"/>
+            <property name="separateLineBetweenGroups" value="true"/>
+            <property name="customImportOrderRules" value="STANDARD_JAVA_PACKAGE, THIRD_PARTY_PACKAGE, SAME_PACKAGE"/>
+        </module>
+
+        <!-- Return, throw дараа нь хоосон мөр оруулах -->
+        <module name="EmptyLineSeparator">
+            <property name="tokens" value="METHOD_DEF, CLASS_DEF, INTERFACE_DEF, ENUM_DEF"/>
+        </module>
+
+    </module>
+
+    <!-- Код UTF-8 байх -->
+    <module name="FileEncoding">
+        <property name="encoding" value="UTF-8"/>
+    </module>
+
+</module>
