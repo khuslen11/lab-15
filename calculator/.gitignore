@@ -1,0 +1,30 @@
+# Maven build directory
+/target/
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# OS-specific files
+.DS_Store        # macOS
+Thumbs.db        # Windows
+ehthumbs.db
+Desktop.ini
+
+# IDE-specific
+*.iml
+.idea/
+
+# Maven plugin outputs
+/checkstyle-result.xml
+/jacoco.exec
