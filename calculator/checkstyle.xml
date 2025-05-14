@@ -46,7 +46,7 @@
         <module name="CustomImportOrder">
             <property name="sortImportsInGroupAlphabetically" value="true"/>
             <property name="separateLineBetweenGroups" value="true"/>
-            <property name="customImportOrderRules" value="STATIC###STANDARD_JAVA_PACKAGE###THIRD_PARTY_PACKAGE###SAME_PACKAGE"/>
+            <property name="customImportOrderRules" value="STATIC_IMPORTS, STANDARD_JAVA_PACKAGE, THIRD_PARTY_PACKAGE, SAME_PACKAGE"/>
         </module>
 
         <!-- Мөрийн урт 100 тэмдэгтээс хэтрэхгүй -->
