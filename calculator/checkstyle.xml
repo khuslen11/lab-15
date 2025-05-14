@@ -42,13 +42,6 @@
         <!-- If, while, for нь үргэлж фигур хаалттай байх -->
         <module name="NeedBraces"/>
 
-        <!-- Импортын дараалал Google стандарт -->
-        <module name="CustomImportOrder">
-            <property name="sortImportsInGroupAlphabetically" value="true"/>
-            <property name="separateLineBetweenGroups" value="true"/>
-            <property name="customImportOrderRules" value="STATIC_IMPORTS, STANDARD_JAVA_PACKAGE, THIRD_PARTY_PACKAGE, SAME_PACKAGE"/>
-        </module>
-
         <!-- Мөрийн урт 100 тэмдэгтээс хэтрэхгүй -->
         <module name="LineLength">
             <property name="max" value="100"/>
